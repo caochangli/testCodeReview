@@ -1,0 +1,79 @@
+{
+    "version": "2.0.0",
+    "type": "shell",
+    "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+    },
+    "problemMatcher": "$tsc",
+    "tasks": [
+        {
+            "label": "tsc",//ts语法检查
+            "command": "node",
+            "args": [
+                "--max-old-space-size=10240",
+                // "C:\\Users\\caochangli\\AppData\\Roaming\\npm\\node_modules\\typescript\\bin\\tsc",//根据自己电脑目录修改
+                "C:\\Users\\caochangli\\AppData\\Roaming\\nvm\\v10.15.1\\node_modules\\typescript\\bin\\tsc",
+                "-p",
+                "tsconfig2.json"
+            ]
+        },
+        {
+            "label": "compile",//编译
+            "type": "shell",
+            "command": "node",
+            "args": [
+                "--max-old-space-size=10240",
+                // "C:\\Users\\caochangli\\AppData\\Roaming\\npm\\node_modules\\layaair2-cmd\\layaair2-cmd-compile.js"//根据自己电脑目录修改
+                "C:\\Users\\caochangli\\AppData\\Roaming\\nvm\\v10.15.1\\node_modules\\layaair2-cmd\\layaair2-cmd-compile.js"
+            ],
+            "dependsOn": ["tsc"]//前置任务：语法检查
+        },
+        {
+            "label": "deBugCompile",//本地编译调试
+            "type": "shell",
+            "command": "node",
+            "args": [".laya\\deBugClosure.js"],
+            "dependsOn": ["compile"]//前置任务：编译
+        },
+        {
+            "label": "tscCompile",//tsc本地编辑调试
+            "type": "shell",
+            "command": "node",
+            "args": [
+                "--max-old-space-size=10240",
+                ".laya\\tscCompile.js",
+                // "C:\\Users\\caochangli\\AppData\\Roaming\\npm\\node_modules\\typescript\\bin\\tsc"//根据自己电脑目录修改
+                "C:\\Users\\caochangli\\AppData\\Roaming\\nvm\\v10.15.1\\node_modules\\typescript\\bin\\tsc"
+            ]
+        },
+        {
+            "label": "mergeCompile",//merge本地编辑调试
+            "type": "shell",
+            "command": "node",
+            "args": [
+                "--max-old-space-size=10240",
+                ".laya\\mergeCompile.js",
+                // "C:\\Users\\caochangli\\AppData\\Roaming\\npm\\node_modules\\typescript\\bin\\tsc"//根据自己电脑目录修改
+                "C:\\Users\\caochangli\\AppData\\Roaming\\nvm\\v10.15.1\\node_modules\\typescript\\bin\\tsc",
+            ]
+        },
+        {
+            "label": "publish",//发布
+            "type": "shell",
+            "command": "node",
+            "args": [
+                "--max-old-space-size=10240",
+                // "C:\\Users\\caochangli\\AppData\\Roaming\\npm\\node_modules\\layaair2-cmd\\layaair2-cmd-publish.js",//根据自己电脑目录修改
+                "C:\\Users\\caochangli\\AppData\\Roaming\\nvm\\v10.15.1\\node_modules\\layaair2-cmd\\layaair2-cmd-publish.js",
+                "-c",
+                "web"
+            ],
+            "dependsOn": ["compile"]//前置任务：编译
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "frames": {
+        "homeLogo.png": {
+            "frame": {
+                "h": 123,
+                "idx": 0,
+                "w": 343,
+                "x": 0,
+                "y": 192
+            },
+            "sourceSize": {
+                "h": 123,
+                "w": 343
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "homeStartBtn.png": {
+            "frame": {
+                "h": 91,
+                "idx": 0,
+                "w": 328,
+                "x": 0,
+                "y": 316
+            },
+            "sourceSize": {
+                "h": 91,
+                "w": 328
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "homeText.png": {
+            "frame": {
+                "h": 191,
+                "idx": 0,
+                "w": 635,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 191,
+                "w": 635
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "meta": {
+        "image": "homeScene.png",
+        "prefix": "homeScene/"
+    }
+}

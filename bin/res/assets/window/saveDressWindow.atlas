@@ -1,0 +1,93 @@
+{
+    "frames": {
+        "saveDressWinBottomText.png": {
+            "frame": {
+                "h": 62,
+                "idx": 0,
+                "w": 326,
+                "x": 0,
+                "y": 773
+            },
+            "sourceSize": {
+                "h": 62,
+                "w": 326
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "saveDressWinLeftLogo.png": {
+            "frame": {
+                "h": 69,
+                "idx": 0,
+                "w": 136,
+                "x": 496,
+                "y": 773
+            },
+            "sourceSize": {
+                "h": 69,
+                "w": 136
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "saveDressWinQRCode.jpg": {
+            "frame": {
+                "h": 179,
+                "idx": 0,
+                "w": 179,
+                "x": 576,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 179,
+                "w": 179
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "saveDressWinRightLogo.png": {
+            "frame": {
+                "h": 68,
+                "idx": 0,
+                "w": 168,
+                "x": 327,
+                "y": 773
+            },
+            "sourceSize": {
+                "h": 68,
+                "w": 168
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "saveDressWinScroll.png": {
+            "frame": {
+                "h": 772,
+                "idx": 0,
+                "w": 575,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 772,
+                "w": 575
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "meta": {
+        "image": "saveDressWindow.png",
+        "prefix": "saveDressWindow/"
+    }
+}

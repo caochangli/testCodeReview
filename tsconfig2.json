@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "target": "es6",
+    "noEmitHelpers": true,
+    "incremental":true,
+    "outDir":"./tscjs/",
+    "removeComments": true,
+    "sourceMap": true
+  },
+  "include":["./src/**/*","./libs/**/*"],  
+  "exclude": [
+    "node_modules"
+  ]
+}
