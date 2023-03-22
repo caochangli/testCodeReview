@@ -29,7 +29,7 @@ export default class Global
 
     public static Init(data:any) {
         if (data)
-            ObjUtil.copyObj(data, this);
+            ObjUtil.copyObj(data, this);asdf
     }
     
     //游戏地址
