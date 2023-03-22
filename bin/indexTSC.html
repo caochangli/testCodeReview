@@ -1,0 +1,228 @@
+<html>
+
+<head>
+    <meta charset='utf-8' />
+	<meta http-equiv="x-dns-prefetch-control" content="on" />
+	<title>李婉换装</title>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'/>
+	<meta name="renderer" content="webkit">
+	<meta name='apple-mobile-web-app-capable' content='yes' />
+	<meta name='full-screen' content='true' />
+	<meta name='x5-fullscreen' content='true' />
+	<meta name='360-fullscreen' content='true' />
+	<meta name="laya" screenorientation ="landscape"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta http-equiv='expires' content='0' />
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	
+</head>
+<!--<script src="../WebGL-Inspector-master/core/embed.js"></script>
+<script type="text/javascript">
+    window.openWebGLInspector = true;
+</script>-->
+<body>
+    <script type="text/javascript" src="libs/min/es-checker.js"></script>
+	<script type="text/javascript" src="libs/firstDebug.js"></script>
+    <div id="loadingDiv" style="position:absolute;top:0px;left:0px;width:100%;height:100%;overflow:hidden">
+        <div style="position:absolute;top:50%;left:50%;;margin-top:-50px;margin-left:-50px;width:100px;height:100px;background:url('res/assets/htmlLoading/loading.gif');"></div>
+	</div>
+	<style>
+		.file {
+			position: relative;
+			display: inline-block;
+			background: #B1956E;
+			border: 1px solid #361800;
+			border-radius: 4px;
+			padding: 2px 11px;
+			overflow: hidden;
+			color: #361800;
+			text-decoration: none;
+			text-indent: 0;
+			line-height: 20px;
+			font-size: 14px;
+			
+		}
+		.file input {
+			position: absolute;
+			font-size: 100px;
+			right: 0;
+			top: 0;
+			opacity: 0;
+			cursor:pointer;
+		}
+		.file:hover {
+			background: #E2CDA2;
+			text-decoration: none;
+			
+		}
+		.CloseBtn {
+			width: 32px;
+			height: 72px;
+			background:url("res/assets/css/WindowCloseBtn_normal.png") no-repeat 0 0;
+			border: 0;
+		}
+		.CloseBtn:hover {
+			background:url("res/assets/css/WindowCloseBtn_over.png") no-repeat 0 0;
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript">
+        window.isLocalDebug = true;
+		window.usePng = true;
+		window.useLocalConfig = true;
+
+		document.write('<script src="libs/sgsGame.js"><\/script>');
+	</script>
+	<!--引擎库-->
+	<script type="text/javascript" src="libs/laya.core.js"></script>
+	<script type="text/javascript" src="libs/laya.ui.js"></script>
+	<script type="text/javascript" src="libs/laya.ani.js"></script>
+	<script type="text/javascript" src="libs/laya.html.js"></script>
+
+	<!--第三方库-->
+	<script type="text/javascript" src="libs/jquery.js"></script>
+	<script type="text/javascript" src="libs/domparserinone.js"></script>
+	<script type="text/javascript" src="libs/bytebuffer.js"></script>
+	<script type="text/javascript" src="libs/workerloader.js"></script>
+	<script type="text/javascript" src="libs/FileSaver.js"></script>
+	<script type="text/javascript" src="libs/md5.js"></script>
+	<script type="text/javascript" src="libs/laya.expand.js"></script>
+	<script type="text/javascript" src="libs/clipboard.js"></script>
+	
+	<!--jsfile--startTag-->
+    <script type="text/javascript" src="../tscjs/vo/DressVO.js"></script>
+    <script type="text/javascript" src="../tscjs/vo/DressPartVO.js"></script>
+    <script type="text/javascript" src="../tscjs/utils/UIUtils.js"></script>
+    <script type="text/javascript" src="../tscjs/utils/StringUtils.js"></script>
+    <script type="text/javascript" src="../tscjs/utils/StorageUtils.js"></script>
+    <script type="text/javascript" src="../tscjs/utils/SgsHttpRequest.js"></script>
+    <script type="text/javascript" src="../tscjs/utils/ObjUtil.js"></script>
+    <script type="text/javascript" src="../tscjs/utils/HttpUtils.js"></script>
+    <script type="text/javascript" src="../tscjs/utils/HtmlUtils.js"></script>
+    <script type="text/javascript" src="../tscjs/utils/FilterUtils.js"></script>
+    <script type="text/javascript" src="../tscjs/utils/EffectUtils.js"></script>
+    <script type="text/javascript" src="../tscjs/utils/Dictionary.js"></script>
+    <script type="text/javascript" src="../tscjs/utils/DateUtils.js"></script>
+    <script type="text/javascript" src="../tscjs/utils/ByteArray.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/layer/LayerBase.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/layer/BottomLayer.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/layer/BackgroundLayer.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/layer/AnimationLayer.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/dressScene/DressTabPanel.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/dressScene/DressAvatarLoad.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/ViewStack.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/SgsPanel.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/SgsFlatPanel.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsTexture.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsTextField.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsText.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsTemplet.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsSprite.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsSlider.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsSkeleton.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsRadioGroup.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsLoadTexture.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsImage.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsHTMLDivElement.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsFlatImage.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsFlatContainer.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsFlatButton.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsComboBox.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/base/WindowBase.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/base/SceneBase.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/base/dressSaveScene/DressSaveScene.js"></script>
+    <script type="text/javascript" src="../tscjs/textureAtlas/TextureAtlasManager.js"></script>
+    <script type="text/javascript" src="../tscjs/textureAtlas/TextureAtlas.js"></script>
+    <script type="text/javascript" src="../tscjs/textureAtlas/AtlaserTexture.js"></script>
+    <script type="text/javascript" src="../tscjs/SystemContext.js"></script>
+    <script type="text/javascript" src="../tscjs/res/ResourceLoader.js"></script>
+    <script type="text/javascript" src="../tscjs/res/ResourceItem.js"></script>
+    <script type="text/javascript" src="../tscjs/res/ResourceEvent.js"></script>
+    <script type="text/javascript" src="../tscjs/res/ResourceConfig.js"></script>
+    <script type="text/javascript" src="../tscjs/res/RES.js"></script>
+    <script type="text/javascript" src="../tscjs/RegClass.js"></script>
+    <script type="text/javascript" src="../tscjs/net/AESUtils.js"></script>
+    <script type="text/javascript" src="../tscjs/mode/gameManager/GameManager.js"></script>
+    <script type="text/javascript" src="../tscjs/mode/base/WindowManager.js"></script>
+    <script type="text/javascript" src="../tscjs/mode/base/TimerManager.js"></script>
+    <script type="text/javascript" src="../tscjs/mode/base/SilenceResManager.js"></script>
+    <script type="text/javascript" src="../tscjs/mode/base/SgsSoundManager.js"></script>
+    <script type="text/javascript" src="../tscjs/mode/base/SceneManager.js"></script>
+    <script type="text/javascript" src="../tscjs/mode/base/ManagerBase.js"></script>
+    <script type="text/javascript" src="../tscjs/mode/base/LoadingManager.js"></script>
+    <script type="text/javascript" src="../tscjs/mode/base/AnimateManager.js"></script>
+    <script type="text/javascript" src="../tscjs/Global.js"></script>
+    <script type="text/javascript" src="../tscjs/event/TipsEvent.js"></script>
+    <script type="text/javascript" src="../tscjs/event/GameEventDispatcher.js"></script>
+    <script type="text/javascript" src="../tscjs/event/EventExpand.js"></script>
+    <script type="text/javascript" src="../tscjs/enum/FontName.js"></script>
+    <script type="text/javascript" src="../tscjs/enum/DressType.js"></script>
+    <script type="text/javascript" src="../tscjs/enum/base/LayoutEnum.js"></script>
+    <script type="text/javascript" src="../tscjs/enum/base/LayerOrder.js"></script>
+    <script type="text/javascript" src="../tscjs/enum/base/ButtonPhaseEnum.js"></script>
+    <script type="text/javascript" src="../tscjs/config/ConfigerManager.js"></script>
+    <script type="text/javascript" src="../tscjs/config/ConfigerBase.js"></script>
+    <script type="text/javascript" src="../tscjs/utils/SgsUpLoadHttpRequest.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/window/VoteWorkInfoWindow.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/window/SaveDressWindow.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/window/RuleItemUI.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/window/LookDressWindow.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/window/ImageFlatButton.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/window/CommonBaseWindow.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/tooltip/ToolTipBase.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/rankScene/RankScene.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/myDressScene/MyDressScene.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/loading/MainLoadingView.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/loading/LoadingUI.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/layer/WindowLayer.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/layer/TopUILayer.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/layer/SceneLayer.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/layer/PromptLayer.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/homeScene/HomeScene.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/dressScene/DressScene.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/dressScene/DressBottomView.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/dressScene/DressAvatarPartUI.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/dressScene/DressAvatar.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/dressScene/CollocationDressAvatar.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/ViewStackBase.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/TextPromptUI.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/SgsTabFlatButton.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/SgsTabButtonGroup.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/SgsPanelItemBase.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/SgsPanelHtmlBase.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/SgsFlatPanelItemBase.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsSpriteButton.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsSkeletonEffect.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsSkeletonButton.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsFlatCheckBox.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/ComboboxRenderItem.js"></script>
+    <script type="text/javascript" src="../tscjs/net/Crypt.js"></script>
+    <script type="text/javascript" src="../tscjs/mode/base/TipsManager.js"></script>
+    <script type="text/javascript" src="../tscjs/config/GlobalConfiger.js"></script>
+    <script type="text/javascript" src="../tscjs/config/DressConfiger.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/window/SharePromptWindow.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/window/RuleWindow.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/window/PromptWindow.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/window/ImageSpriteButton.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/tooltip/ToolTips.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/myDressScene/MyDressItemUI.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/dressScene/DressTabFlatButton.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/dressScene/DressPanelFlatItem.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/dressScene/DressColorTabFlatButton.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/SgsTabButton.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsSpriteCheckBox.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsFlatRadio.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/rankScene/RankItemUI.js"></script>
+    <script type="text/javascript" src="../tscjs/ui/controls/base/SgsSpriteRadio.js"></script>
+    <!--jsfile--endTag-->
+
+	<!--jsfile--Main-->
+	<script type="text/javascript" src="../tscjs/GameMain.js"></script>
+	<!--jsfile--Main-->
+
+</body>
+
+<div id="iframeCon">
+</div>
+
+</html>

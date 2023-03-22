@@ -1,0 +1,59 @@
+{
+    "frames": {
+        "modelAvatar1.png": {
+            "frame": {
+                "h": 940,
+                "idx": 0,
+                "w": 548,
+                "x": 0,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 940,
+                "w": 548
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "modelAvatar2.png": {
+            "frame": {
+                "h": 940,
+                "idx": 0,
+                "w": 548,
+                "x": 549,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 940,
+                "w": 548
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "modelAvatar3.png": {
+            "frame": {
+                "h": 940,
+                "idx": 0,
+                "w": 548,
+                "x": 1098,
+                "y": 0
+            },
+            "sourceSize": {
+                "h": 940,
+                "w": 548
+            },
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "meta": {
+        "image": "modelAvatar.png",
+        "prefix": "modelAvatar/"
+    }
+}

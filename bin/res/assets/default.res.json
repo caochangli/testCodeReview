@@ -1,0 +1,75 @@
+{
+	"groups": [
+		{
+			"keys": "mainLoadingBg_image,tuzitiao_sk",
+			"name": "mainLoading"
+		},
+		{
+			"keys": "DressConfig_json",
+			"name": "config"
+		},
+		{
+			"keys": "baseUI_atlas,modelAvatar_atlas,shareIcon_image",
+			"name": "preload"
+		},
+		{
+			"keys": "homeSceneBg_image,homeScene_atlas",
+			"name": "homeScene"
+		},
+		{
+			"keys": "dressSceneBg_image,dressScene_atlas",
+			"name": "dressScene"
+		},
+		{
+			"keys": "dressSceneBg_image,dressScene_atlas",
+			"name": "dressSaveScene"
+		},
+		{
+			"keys": "myDressSceneBg_image,myDressSceneNot_image,VoteWorkInfoAvatarBg_image,myDressScene_atlas",
+			"name": "myDressScene"
+		},
+		{
+			"keys": "myDressSceneBg_image,VoteWorkInfoAvatarBg_image,myDressScene_atlas",
+			"name": "rankScene"
+		},
+		{
+			"keys": "saveDressWinBg_image,saveDressWindow_atlas",
+			"name": "saveDressWin"
+		},
+		{
+			"keys": "",
+			"name": "dressPartTemp"
+		},
+		{
+			"keys": "",
+			"name": "runtime"
+		}
+	],
+	"resources": [
+		{"url": "assets/mainLoading/mainLoadingBg.png","type": "image","name": "mainLoadingBg_image"},
+		{"url": "assets/mainLoading/tuzitiao.sk","type": "arraybuffer","name": "tuzitiao_sk"},
+
+		{"url": "config/Config.sgs","type": "arraybuffer","name": "Config_sgs"},
+		{"url": "config/GlobalConfig.json","type": "json","name": "GlobalConfig_json"},
+		{"url": "config/DressConfig.json","type": "json","name": "DressConfig_json"},
+
+		{"url": "assets/baseUI.atlas","type": "atlas","name": "baseUI_atlas"},
+		{"url": "assets/modelAvatar/modelAvatar.atlas","type": "atlas","name": "modelAvatar_atlas"},
+		{"url": "assets/shareIcon.png","type": "image","name": "shareIcon_image"},
+
+		{"url": "assets/homeScene/homeSceneBg.jpg","type": "image","name": "homeSceneBg_image"},
+		{"url": "assets/homeScene/homeScene.atlas","type": "atlas","name": "homeScene_atlas"},
+
+		{"url": "assets/dressScene/dressSceneBg.png","type": "image","name": "dressSceneBg_image"},
+		{"url": "assets/dressScene/dressScene.atlas","type": "atlas","name": "dressScene_atlas"},
+
+		{"url": "assets/myDressScene/myDressSceneBg.png","type": "image","name": "myDressSceneBg_image"},
+		{"url": "assets/myDressScene/myDressSceneNot.png","type": "image","name": "myDressSceneNot_image"},
+		{"url": "assets/myDressScene/VoteWorkInfoAvatarBg.png","type": "image","name": "VoteWorkInfoAvatarBg_image"},
+		{"url": "assets/myDressScene/myDressScene.atlas","type": "atlas","name": "myDressScene_atlas"},
+
+		{"url": "assets/window/saveDressWinBg.jpg","type": "image","name": "saveDressWinBg_image"},
+		{"url": "assets/window/saveDressWindow.atlas","type": "atlas","name": "saveDressWindow_atlas"}
+	]
+
+}

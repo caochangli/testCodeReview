@@ -23,7 +23,7 @@ import GameManager from "./mode/gameManager/GameManager";
 // 程序入口
 export default class GameMain
 {
-    private static loadingView:MainLoadingView;
+    private static loadingView:MainLoadingView;sss
 	private configRatio:number = 0;
 	private preloadRatio:number = 0;
 	private static parseConfiged:boolean = false;//配置解析完
@@ -60,6 +60,8 @@ export default class GameMain
 		TipsManager.GetInstance().AddEventListener();
 
 		this.initClientConfig();
+
+	
 		
 		Laya.stage.on(Laya.Event.RESIZE,this,this.stageResize);
 		Laya.stage.on(Laya.Event.FOCUS,this,this.stageFocus);
