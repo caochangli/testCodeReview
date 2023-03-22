@@ -41,7 +41,7 @@ export default class Global
     //游戏地址
     public static get AppID():string
     {
-        test
+        testCR
         return Laya.Browser.window.appid;
     }
     
